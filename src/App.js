@@ -1,11 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import Main from "./components/main/Main";
+import { useState, useEffect } from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-function App() {
+const  App = () => {
+
   return (
-    <div className="App">
-      
-    </div>
+      <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Main />}/>
+      </Routes>
+    </BrowserRouter>
   );
 }
 
